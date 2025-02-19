@@ -16,16 +16,16 @@ public class SubtractTest extends BaseTest{
     }
     @Test(dataProvider = "subtract", priority = 3, description = "checking the subtraction of fractional numbers")
     public void SubtractTest(Double a, Double b, Double result){
-        Assert.assertEquals(calculator.subtract(a,b),result);
+        Assert.assertEquals(calculator.subtract(a, b), result);
     }
 
     @Test(priority = 1, description = "checking the subtraction of positive integers")
     public void SubtractOfPositiveIntegersTest(){
-        Assert.assertEquals(calculator.subtract(5,7),-2);
+        Assert.assertEquals(calculator.subtract(5,7), -2);
     }
 
     @Test(priority = 2, description = "checking the subtraction of negative integers")
     public void SubtractOfNegativeIntegersTest(){
-        Assert.assertEquals(calculator.subtract(-100,-1),-99);
+        Assert.assertEquals(calculator.subtract(-100,-1), -99);
     }
 }

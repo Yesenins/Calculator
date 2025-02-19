@@ -15,17 +15,17 @@ public class MultiplyTest extends BaseTest{
     }
     @Test(dataProvider = "multiply", priority = 1, description = "checking the multiplication of fractional numbers")
     public void multiplicationFractionalTest(Double a, Double b, Double result){
-        Assert.assertEquals(calculator.multiply(a,b),result);
+        Assert.assertEquals(calculator.multiply(a, b), result);
     }
 
     @Test(priority = 2, description = "checking the multiplication of integers")
     public void multiplicationIntegersTest(){
-        Assert.assertEquals(calculator.multiply(10,5),50);
+        Assert.assertEquals(calculator.multiply(10,5), 50);
     }
 
     @Test(priority = 4, description = "checking multiplication by zero")
     public void multiplicationByZeroTest(){
-        Assert.assertEquals(calculator.multiply(0,5),0);
+        Assert.assertEquals(calculator.multiply(0,5), 0);
     }
 
     @Test(priority = 3, description = "checking the multiplication of negative numbers")

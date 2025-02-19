@@ -22,7 +22,7 @@ public class SumTest extends BaseTest{
 
     @Test(priority = 3, description = "checking the addition of large positive numbers")
     public void sumOfLargeFractionalPositiveNumbersTest(){
-        Assert.assertEquals(calculator.sum(1000000000000.0,223134654654651.15),2.2413465465465116E14);
+        Assert.assertEquals(calculator.sum(1000000000000.0,223134654654651.15), 2.2413465465465116E14);
     }
 
     @Test(priority = 2, description = "checking the addition of positive and negative numbers")

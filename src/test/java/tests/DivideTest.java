@@ -31,8 +31,6 @@ public class DivideTest extends BaseTest {
 
     @Test(priority = 4, description = "checking the division of zero by numbers")
     public void divideZeroByNumbersTest() {
-        Assert.assertEquals((calculator.divide(0.0, 12.0)),0.0);
+        Assert.assertEquals((calculator.divide(0.0, 12.0)), 0.0);
     }
-
-
 }
